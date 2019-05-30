@@ -8,9 +8,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.booky.Model.SearchQuanAn;
 import com.example.booky.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomArrayAdapter extends ArrayAdapter<SearchQuanAn> {
    Context context;

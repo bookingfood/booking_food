@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<TextView
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:id="@+id/item1"
+    android:text="Ca phe cong"
+    android:textStyle="bold"
+    android:textSize="15dp"
+    android:textColor="@color/gray"
+    />
+    <TextView
+        android:paddingLeft="10dp"
+    android:layout_width="300dp"
+        android:textSize="10dp"
+        android:layout_gravity="center"
+    android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+    android:id="@+id/item2"
+        android:text="Duong truong chinh"
+        android:textColor="@color/gray"
+    />
+
+</LinearLayout>
