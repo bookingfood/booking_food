@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/datban_toolbar"
+        />
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            >
+
+            <Button
+                android:id="@+id/btnChonNgay"
+                android:layout_width="227dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:hint="Ngày"
+                android:textColor="@color/gray"
+                />
+
+            <Button
+                android:id="@+id/btnChongio"
+                android:layout_width="229dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:hint="Giờ"
+                android:textColor="@color/gray"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Số lượng người "
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:layout_marginLeft="80dp"
+                android:id="@+id/edSoluongnguoi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="@drawable/radius_button"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:text="10"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại liên lạc"
+            android:textSize="15dp"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edsodienthoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_radius_white"
+            android:hint="Điền số điện thoại để nhận cuộc gọi xác minh bạn nhé!"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:inputType="phone"
+            android:digits="0123456789+"
+            android:textColor="@color/gray"
+            />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ghi chú"
+                android:textSize="15dp"
+                />
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/edghichu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Thêm ghi chú của bạn vào đây! "
+                android:layout_weight="1"
+                android:background="@drawable/button_radius_white"
+                android:padding="5dp"
+                android:textColor="@color/gray"
+                />
+        <Button
+            android:id="@+id/btnDatban"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datban"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/red_radius"/>
+        </LinearLayout>
+ </LinearLayout>
+</LinearLayout>
