@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.booky.Model.BinhLuanModel;
 import com.example.booky.R;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
@@ -26,7 +27,6 @@ public class AdapterBinhLuan extends RecyclerView.Adapter<AdapterBinhLuan.ViewHo
     Context context;
     int layout;
     List<BinhLuanModel> binhLuanModelList;
-
 
     public AdapterBinhLuan(Context context, int layout, List<BinhLuanModel> binhLuanModelList){
         this.context = context;

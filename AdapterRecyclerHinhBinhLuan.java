@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.example.booky.Model.BinhLuanModel;
 import com.example.booky.R;
 import com.example.booky.View.HienThiChiTietBinhLuanActivity;
 

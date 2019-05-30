@@ -1,15 +1,19 @@
 package com.example.booky.Adapters;
 
+
+
 import android.content.Context;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 
-
+import com.example.booky.Model.ChonHinhBinhLuanModel;
 import com.example.booky.R;
 
 import java.util.List;
@@ -20,7 +24,7 @@ public class AdapterChonHinhBinhLuan extends RecyclerView.Adapter<AdapterChonHin
     int resource;
     List<ChonHinhBinhLuanModel> listDuongDan;
 
-    public AdapterChonHinhBinhLuan(Context context, int resource, List<ChonHinhBinhLuanModel> listDuongDan){
+    public  AdapterChonHinhBinhLuan(Context context,int resource,List<ChonHinhBinhLuanModel> listDuongDan){
         this.context = context;
         this.resource = resource;
         this.listDuongDan = listDuongDan;
@@ -40,13 +44,13 @@ public class AdapterChonHinhBinhLuan extends RecyclerView.Adapter<AdapterChonHin
         Uri uri = Uri.parse(chonHinhBinhLuanModel.getDuongdan());
         holder.imageView.setImageURI(uri);
         holder.checkBox.setChecked(chonHinhBinhLuanModel.isCheck());
-       holder.checkBox.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               CheckBox checkBox = (CheckBox) v;
-               listDuongDan.get(position).setCheck(checkBox.isChecked());
-           }
-       });
+        holder.checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CheckBox checkBox = (CheckBox) v;
+                listDuongDan.get(position).setCheck(checkBox.isChecked());
+            }
+        });
     }
 
     @Override
