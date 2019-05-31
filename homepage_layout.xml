@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroungTrangChu">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/btnaddquanan"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_add_white_24dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/group_odau_angi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rd_odau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_radio_odau"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:padding="10dp"
+                android:text="@string/odau"
+                android:textColor="@drawable/changetext_radio_trangchu" />
+
+            <RadioButton
+                android:id="@+id/rd_angi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_radio_angi"
+                android:button="@android:color/transparent"
+                android:padding="10dp"
+                android:text="@string/angi"
+                android:textColor="@drawable/changetext_radio_trangchu" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/Searchview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnStartSearch"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_search"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                />
+
+            <EditText
+                android:id="@+id/edSearch"
+                android:background="@drawable/custom_search_edittext"
+                android:layout_width="300dp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:visibility="gone"
+                />
+
+            <CheckBox
+                android:id="@+id/btnSearch"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:button="@android:color/transparent"
+                android:background="@drawable/ic_search"
+                android:paddingRight="5dp"
+                android:layout_margin="10dp"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<android.support.v4.view.ViewPager
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/viewpager_hompage"></android.support.v4.view.ViewPager>
+        <ListView
+            android:id="@+id/lsSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></ListView>
+    </FrameLayout>
+</LinearLayout>
